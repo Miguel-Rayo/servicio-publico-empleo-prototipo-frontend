@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/vacantes",
+  baseURL: "https://servicio-publico-empleo-prototipo-backend.onrender.com/api/vacantes",
 });
 
 export const getResumen         = ()       => API.get("/resumen").then(r => r.data);
